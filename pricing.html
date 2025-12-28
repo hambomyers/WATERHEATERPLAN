@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transparent pricing for water heater maintenance plans in Virginia. Basic $159, Advanced $249, Elite $319. Valley discounts available.">
+    <meta name="keywords" content="water heater plan cost, maintenance pricing Virginia, annual service plan rates, Shenandoah Valley discount">
+    <title>Pricing | Water Heater Plan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-icon">💧</span>
+                        <span class="logo-text">Water Heater Plan</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="btn-nav">Sign Up</a></li>
+                </ul>
+                <div class="qr-code-header">
+                    <img src="assets/qr-code.png" alt="Scan to sign up" width="40" height="40">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Simple, Transparent Pricing</h1>
+                <p class="page-hero-subtitle">Choose the plan that fits your needs. No hidden fees, just reliable service.</p>
+            </div>
+        </section>
+
+        <section class="pricing-full">
+            <div class="container">
+                <div class="pricing-toggle">
+                    <label class="toggle-label">
+                        <span class="toggle-option active" data-region="valley">Shenandoah Valley</span>
+                        <input type="checkbox" id="regionToggle">
+                        <span class="toggle-slider"></span>
+                        <span class="toggle-option" data-region="base">Charlottesville/Base</span>
+                    </label>
+                    <p class="toggle-note">💡 Valley residents save with our introductory discount!</p>
+                </div>
+
+                <div class="pricing-table-wrapper">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Tier</th>
+                                <th>Description</th>
+                                <th class="price-col valley-price">Annual Price<br><span class="region-label">(Valley Discount)</span></th>
+                                <th class="price-col base-price" style="display: none;">Annual Price<br><span class="region-label">(Charlottesville/Base)</span></th>
+                                <th>Monthly Option</th>
+                                <th>Key Features</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="pricing-row">
+                                <td class="tier-name">
+                                    <strong>Basic</strong>
+                                    <span class="tier-badge">Essential</span>
+                                </td>
+                                <td>
+                                    <p>Essential annual preventive care for tanks or tankless. Meets manufacturer specs.</p>
+                                </td>
+                                <td class="price-col valley-price">
+                                    <div class="price-display">
+                                        <span class="price-main">$159</span>
+                                        <span class="price-original">was $189</span>
+                                        <span class="price-savings">Save $30</span>
+                                    </div>
+                                </td>
+                                <td class="price-col base-price" style="display: none;">
+                                    <div class="price-display">
+                                        <span class="price-main">$189</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="monthly-na">Annual only</span>
+                                </td>
+                                <td>
+                                    <ul class="features-compact">
+                                        <li>✓ 10-point inspection</li>
+                                        <li>✓ Flush/descale</li>
+                                        <li>✓ Anode/filter check & replace</li>
+                                        <li>✓ Sediment drain</li>
+                                        <li>✓ Thermostat/vent/leak test</li>
+                                        <li>✓ Efficiency tune</li>
+                                        <li>✓ Priority scheduling</li>
+                                        <li>✓ 10% off parts/repairs</li>
+                                        <li><strong>Value:</strong> Prevents $600+ breakdowns</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="pricing-row featured-row">
+                                <td class="tier-name">
+                                    <strong>Advanced</strong>
+                                    <span class="tier-badge popular">Most Popular</span>
+                                </td>
+                                <td>
+                                    <p>Deeper care for high-use or acidic water homes/offices.</p>
+                                </td>
+                                <td class="price-col valley-price">
+                                    <div class="price-display">
+                                        <span class="price-main">$249</span>
+                                        <span class="price-original">was $289</span>
+                                        <span class="price-savings">Save $40</span>
+                                    </div>
+                                </td>
+                                <td class="price-col base-price" style="display: none;">
+                                    <div class="price-display">
+                                        <span class="price-main">$289</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="monthly-available">$25/month</span>
+                                    <span class="monthly-note">Auto-bill via Stripe</span>
+                                </td>
+                                <td>
+                                    <ul class="features-compact">
+                                        <li>✓ <strong>All Basic features</strong></li>
+                                        <li>✓ Bi-annual visits (2x/year)</li>
+                                        <li>✓ Water quality/acidity test</li>
+                                        <li>✓ Circulation pump inspect</li>
+                                        <li>✓ Minor repairs covered ($100/year cap)</li>
+                                        <li>✓ Acid neutralizer consult</li>
+                                        <li><strong>Option:</strong> Upsell to treatment install ($500-$1K)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="pricing-row">
+                                <td class="tier-name">
+                                    <strong>Elite</strong>
+                                    <span class="tier-badge tech">High-Tech</span>
+                                </td>
+                                <td>
+                                    <p>Innovative monitoring to predict issues before they happen.</p>
+                                </td>
+                                <td class="price-col valley-price">
+                                    <div class="price-display">
+                                        <span class="price-main">$319</span>
+                                        <span class="price-original">was $349</span>
+                                        <span class="price-savings">Save $30</span>
+                                    </div>
+                                </td>
+                                <td class="price-col base-price" style="display: none;">
+                                    <div class="price-display">
+                                        <span class="price-main">$349</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="monthly-available">$32/month</span>
+                                    <span class="monthly-note">Auto-bill via Stripe</span>
+                                </td>
+                                <td>
+                                    <ul class="features-compact">
+                                        <li>✓ <strong>All Advanced features</strong></li>
+                                        <li>✓ Wi-Fi sensor install (Aquanta $149 or UbiBot $60 value)</li>
+                                        <li>✓ <strong>Sensor waived Year 1</strong></li>
+                                        <li>✓ Real-time dashboard on site</li>
+                                        <li>✓ Temp monitoring 24/7</li>
+                                        <li>✓ Circulation tracking</li>
+                                        <li>✓ Leak alerts via email/SMS</li>
+                                        <li>✓ Usage analytics & graphs</li>
+                                        <li><strong>Reduces repairs 25-30%</strong></li>
+                                        <li>Ideal for tankless Navien/Rinnai</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pricing-notes-section">
+                    <h3>Important Information</h3>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4>💼 Commercial Adjustments</h4>
+                            <p>Add 20% premium for light commercial properties (2-10 units).</p>
+                            <p><strong>Example:</strong> 4-unit apartment building Basic plan:</p>
+                            <ul>
+                                <li>Valley: $191/year</li>
+                                <li>Charlottesville: $227/year</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h4>🔧 One-Time Services</h4>
+                            <ul>
+                                <li><strong>Emergency Descaling:</strong> $129-$249 (lower in Valley)</li>
+                                <li><strong>Full Replacement:</strong> $500-$3,000 (quote required)</li>
+                                <li><strong>Parts:</strong> 10% member discount on all OEM parts</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h4>💳 Payment Options</h4>
+                            <p>We accept all major credit cards via Stripe integration. Monthly plans are auto-billed on the same day each month.</p>
+                            <p><strong>QuickBooks integration</strong> for invoicing and records.</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>📅 Service Scheduling</h4>
+                            <p>Annual plans: One visit per year at your convenience.</p>
+                            <p>Advanced plans: Two visits (typically spring and fall).</p>
+                            <p>Elite plans: Two visits + remote monitoring 24/7.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comparison-section">
+                    <h2>Which Plan is Right for You?</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-card">
+                            <h3>Choose Basic If:</h3>
+                            <ul>
+                                <li>✓ You have a newer water heater (under 5 years)</li>
+                                <li>✓ You want essential preventive care</li>
+                                <li>✓ Your water quality is average</li>
+                                <li>✓ You're on a budget</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card featured">
+                            <h3>Choose Advanced If:</h3>
+                            <ul>
+                                <li>✓ You have hard or acidic water</li>
+                                <li>✓ Your water heater is 5+ years old</li>
+                                <li>✓ You want bi-annual service</li>
+                                <li>✓ You need water quality testing</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card">
+                            <h3>Choose Elite If:</h3>
+                            <ul>
+                                <li>✓ You have a tankless system (Navien, Rinnai)</li>
+                                <li>✓ You want 24/7 monitoring</li>
+                                <li>✓ You travel frequently or have a vacation home</li>
+                                <li>✓ You want predictive maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="value-proposition">
+                    <h2>Why Annual Maintenance Pays for Itself</h2>
+                    <div class="value-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">$600+</div>
+                            <p>Average cost of emergency water heater repair</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3-5 years</div>
+                            <p>Extended lifespan with regular maintenance</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10-15%</div>
+                            <p>Energy savings from efficiency tune-ups</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">25-30%</div>
+                            <p>Fewer repairs with Elite monitoring</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Sign up today and protect your water heater investment.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">Sign Up Now</a>
+                        <a href="services.html" class="btn btn-secondary btn-large">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Water Heater Plan</h3>
+                    <p>Professional water heater maintenance for Virginia homes and businesses.</p>
+                    <div class="footer-qr">
+                        <img src="assets/qr-code.png" alt="Scan to sign up" width="80" height="80">
+                        <p>Scan to sign up instantly</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li>Waynesboro, VA</li>
+                        <li>Staunton, VA</li>
+                        <li>Harrisonburg, VA</li>
+                        <li>Charlottesville, VA (Coming Soon)</li>
+                        <li>Richmond, VA (Coming Soon)</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Get maintenance tips and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Water Heater Plan - A DBA of H and H Myers Investments LLC. All rights reserved.</p>
+                <p>Partnered with Hamilton Plumbing | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
